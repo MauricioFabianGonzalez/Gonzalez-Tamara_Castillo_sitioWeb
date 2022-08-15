@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="icon" href="../Img/iconos/nota.jpg">
+    <title>Tamy Castillo</title>
+</head>
+<body>
+    <header>
+        <section class="encabezado">
+            <div class="logo"><img src="../Img/LogoT.png" alt="logo"></div>
+         <ul>   
+           <li><a href="../index.html"class="enlaces">Inicio</a></li>
+           <li><a href="Eventos.html"class="selecionado">Eventos</a></li>
+           <li><a href="Biografia.html"class="enlaces">Biografia</a></li>
+           <li><a href="Canciones.html"class="enlaces">Canciones</a></li>
+           <li><a href="Galeria.html"class="enlaces">Galeria</a></li>
+           <li><a href="Contactos.html"class="enlaces">Contactos</a></li>
+        </ul>
+        </section>
+    </header>
+    <section class="seccionm">
+    <h1 class="titulo">Eventos</h1>
+    </section>
+    <aside class="aside">
+        <ul>
+            <li><img src="../Img/iconos/twiter.png" alt="icono twiter"></li>
+            <li><img src="../Img/iconos/instagram.jpg" alt="icono instagram"></li>
+            <li><img src="../Img/iconos/facebook.png" alt="icono facebook"></li>
+            <li><img src="../Img/iconos/tictok.jpg" alt="icono tic tok"></li>
+        </ul>
+    </aside>
+    <table border="solid">
+        <tr>
+        <th>Fecha del Evento</th>
+        <th>Lugar del Evento</th>
+        </tr>
+        <tr>
+            <td>20/08/2022</td>
+            <td>Cita con la Vida Cordoba</td>
+        </tr>
+    </table>
+
+    <form action="" method="get">
+    <fieldset  >
+        <legend>Datos Personales</legend>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre"class="datos">
+        <br>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido"class="datos">
+        <br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email"class="datos">
+        <br>
+        <label for="Telefono">Telefono:</label>
+        <input type="number" id="Telefono" name="Telefono"class="datos">
+    </fieldset>
+    <FIeldset>
+        <legend>Datos del Evento</legend>
+        <label for="Fecha">Fecha del Evento:</label>
+        <input type="date" id="Fecha" name="Fecha">
+        <br>
+        <label for=""> Contanos, ¿como va a ser el evento?</label>
+        <br>
+        <label for="Virtual">Virtual:</label>
+        <input type="radio" id="Tipo" name="Virtual">
+        <label for="Presencial">Presencial:</label>
+        <input type="radio" id="Presencial" name="Presencial">
+        <label for="Comentarios">Comentarios:</label>
+        <br>
+        <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" id="Enviar" name="Enviar">
+    </fieldset>
+    </form>
+    <footer>
+    <p>Informacion del footer</p>
+    </footer>
+</body>
