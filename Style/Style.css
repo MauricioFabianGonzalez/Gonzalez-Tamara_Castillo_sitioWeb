@@ -641,7 +641,6 @@ footer{
     .contenedor-carrousel:hover{
         animation-play-state: paused;
         cursor: pointer;
-        filter:alpha(opacity=0);
         
     }
     
