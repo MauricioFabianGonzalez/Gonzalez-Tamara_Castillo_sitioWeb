@@ -75,7 +75,7 @@ s.eccion2{
 
 /*Body*/
 body{
-    background-image:url("/Img/Foto2.jpg");
+    background-image:url("../Img/FondoPage.jpg");
     height: 150px;
     background-attachment: fixed;
     background-position: center;
@@ -628,6 +628,7 @@ footer{
     .contenedor-carrousel img:hover{
         transform:scale(1.2);
         transition: all 300ms;
+
     }
     @keyframes rotar{
           from{
@@ -640,6 +641,8 @@ footer{
     .contenedor-carrousel:hover{
         animation-play-state: paused;
         cursor: pointer;
+        filter:alpha(opacity=0);
+        
     }
     
     /*Formularios */
