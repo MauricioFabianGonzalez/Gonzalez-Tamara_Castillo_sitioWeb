@@ -2,65 +2,109 @@
 <html lang="es">
     <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./Style/Style.css">
-    <link rel="icon" href="./Img/iconos/nota.jpg"> 
+    <link rel="stylesheet" href="./Style/Style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Tamy Castillo</title>
     </head>
-    <body class="grid-container">  
-    <header class="header"> 
-        <section class="encabezado">
-            <label for="iconmenu" class="icono"><img src="/herramientas/Iconmenu.svg" alt="icono del menu desplegable"></label>
-            <input type="checkbox"id="iconmenu" class="icono_input"> 
-            <nav class="navegador">
-                <div class="logo"><img src="./Img/LogoT.png" alt="logo"></div>
-                <ul id="botones"class="menu">
-                    <li><a href="./index.html"class="selecionado" id="inicio">Inicio</a></li>
-                    <li><a href="./Page/Eventos.html"class="enlaces" id="evento">Eventos</a></li>
-                    <li><a href="./Page/Biografia.html"class="enlaces" id="biografia">Biografia</a></li>
-                    <li><a href="./Page/Canciones.html"class="enlaces" id="canciones">Canciones</a></li>
-                    <li><a href="./Page/Galeria.html"class="enlaces" id="galeria">Galeria</a></li>
-                    <li><a href="./Page/Contactos.html"class="enlaces" id="contactos">Contactos</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main class="main">
-        <h1 class="titulo" >Novedades</h1>
-        <section class="seccion1">
-            <p class="textvideo">Lorem ipsum dolor sit amet, em ut, cula lacus convallis. Nulla vitae odio odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce eu blandit quam. Suspendisse tempus ac risus vel venenatis. Donec id ultricies augue, non porta ligula. Integer et vulputate nisl.</p>
-            <iframe class="video" width="560" height="315" id= "video" src="https://www.youtube.com/embed/XfU3qt_hcG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video Musical</iframe>
-
-        </section>
-        <h2 class="titulo2">Visita Mi Galeria</h2>
-        <section class="seccion2">
-            <div class="imganimadas">
-                <div class="contenedortodo">
-                    <div class="contenedor-carrousel">
-                        <figure class="figura" id="f1"><img src="./Img/Carrousel/Tam rec hor 2.jpg" alt=""></figure>
-                        <figure class="figura" id="f2"><img src="./Img/Carrousel/Tam cuad 3.jpg" alt=""></figure>
-                        <figure class="figura" id="f3"><img src="./Img/Carrousel/Tam cuad 5.jpg" alt=""></figure>
-                        <figure class="figura" id="f4"><img src="./Img/Carrousel/IMG-20191105-WA0023.jpg" alt=""></figure>
-                        <figure class="figura" id="f5"><img src="./Img/Carrousel/Tam rec hor 2.jpg" alt=""></figure>
-                        <figure class="figura" id="f6"><img src="./Img/Carrousel/Tam rec hor 3.jpg" alt=""></figure>
-                        <figure class="figura" id="f7"><img src="./Img/Carrousel/Tam rec hor 4.jpg" alt=""></figure>
-                        <figure class="figura" id="f8"><img src="./Img/Carrousel/Tam rec hor 9.jpg" alt=""></figure>
-                        <figure class="figura" id="f9"><img src="./Img/Galeria 01.jpg" alt=""></figure>
+    <body>
+        <header class="cabecera">
+            <ul class="menu">
+                <li><a href="./index.html"class="selecionado" id="inicio">Inicio</a></li>
+                <li><a href="./Page/Eventos.html"class="enlaces" id="evento">Eventos</a>
+                    <ul class="menu-vertical">
+                        <li><a href="./Page/Eventos.html"class="enlaces" id="evento">Evento Presencial</a>
+                        </li>
+                        <li><a href="./Page/Eventos.html"class="enlaces" id="evento">Evento Virtual</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./Page/Biografia.html"class="enlaces" id="biografia">Biografia</a></li>
+                <li><a href="./Page/Canciones.html"class="enlaces" id="canciones">Canciones</a></li>
+                <li><a href="./Page/Galeria.html"class="enlaces" id="galeria">Galeria</a></li>
+                <li><a href="./Page/Contactos.html"class="enlaces" id="contactos">Contactos</a></li>
+            </ul>
+        </header>
+        <main>
+            <div><h1>Nuevo Lanzamiento</h1></div>
+            <section class="seccionCarrouse">
+                <div id="contenedorItemsCarrousel">
+                    <div class="items">
+                        <div class="tarjeta" id="item1"><img src="/Img/tapaAlbum01.jpg" alt="">
+                        </div>
+                        <div class="flechasCarrousel">
+                            <a href="#item3">
+                                <i class="flechas"><img src="/Img/iconos/left-arrow.png" alt=""></i>
+                            </a>
+                            <a href="#item2">
+                                <i class="flechas"><img src="/Img/iconos/right-arrow.png" alt=""></i>
+                            </a>
+                        </div>
                     </div>
+                    <div class="items">
+                        <div class="tarjeta" id="item2"><img src="/Img/tapaAlbun02.jpg" alt="">
+                        </div>
+                        <div class="flechasCarrousel">
+                            <a href="#item1">
+                                <i class="flechas"><img src="/Img/iconos/left-arrow.png" alt=""></i>
+                            </a>
+                            <a href="#item3">
+                                <i class="flechas"><img src="/Img/iconos/right-arrow.png" alt=""></i>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <div class="tarjeta" id="item3"><img src="/Img/tapaAlbum03.jpg" alt="">
+                            </div>
+                            <div class="flechasCarrousel">
+                                <a href="#item2">
+                                    <i class="flechas"><img src="/Img/iconos/left-arrow.png" alt=""></i>
+                                </a>
+                                <a href="#item1">
+                                    <i class="flechas"><img src="/Img/iconos/right-arrow.png" alt=""></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
                 </div>
-            </div>   
-        <p class="textcarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nisi euismod, posuere sem ut, egestas orci. Etiam iaculis convallis nulla et volutpat. Vestibulum accumsan libero ut sem sodales, id vehicula lacus convallis. Nulla vitae odio odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce eu blandit quam. Suspendisse tempus ac risus vel venenatis. Donec id ultricies augue, non porta ligula. Integer et vulputate nisl.</p>
-        </section>
-        <aside class="aside">
+            </section>
+            <section class="redes">
+                <div><p>Seguime en mis Redes</p></div>
+                <ul class="iconosHorizontales">
+                    <li><img class="iconRedes" src="./Img/iconos/twiter.png" alt="icono twiter"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/instagram (1).png" alt="icono instagram"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/facebook.png" alt="icono facebook"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/tik-tok.png" alt="icono tik-tok"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/spotify.png" alt="icono spotify"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/youtube.png" alt="icono youtube"></li>
+                </ul>
+            </section>
+            <section>
+                <div class="video">
+                    <iframe  width="560" height="315" id= "video" src="https://www.youtube.com/embed/XfU3qt_hcG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video Musical</iframe>
+                </div>
+                <div><p>Escuchalo Ahora</p></div>
+            </section>
+        <aside>
             <ul>
                 <li><img src="./Img/iconos/twiter.png" alt="icono twiter"></li>
-                <li><img src="./Img/iconos/instagram.jpg" alt="icono instagram"></li>
+                <li><img src="./Img/iconos/instagram (1).png" alt="icono instagram"></li>
                 <li><img src="./Img/iconos/facebook.png" alt="icono facebook"></li>
-                <li><img src="./Img/iconos/tictok.jpg" alt="icono tic tok"></li>
+                <li><img src="./Img/iconos/tik-tok.png" alt="icono tic tok"></li>
+                <li><img src="./Img/iconos/spotify.png" alt="icono tic tok"></li>
+                <li><img src="./Img/iconos/youtube.png" alt="icono tic tok"></li>
             </ul>
         </aside>
-    </main>
-    <footer>
-        <p>Informacion del footer</p>
-    </footer>
+        <footer>
+            <div>@2022 Tamara Castillo Copyright</div>
+            <ul class="iconosHorizontales">
+                <li><img class="iconfooter" src="./Img/iconos/twiter.png" alt="icono twiter"></li>
+                <li><img class="iconfooter" src="./Img/iconos/instagram (1).png" alt="icono instagram"></li>
+                <li><img class="iconfooter" src="./Img/iconos/facebook.png" alt="icono facebook"></li>
+                <li><img class="iconfooter" src="./Img/iconos/tik-tok.png" alt="icono tik-tok"></li>
+                <li><img class="iconfooter" src="./Img/iconos/spotify.png" alt="icono spotify"></li>
+                <li><img class="iconfooter" src="./Img/iconos/youtube.png" alt="icono youtube"></li>
+            </ul>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,38 @@
+   <div>
+            <iframe class="video" width="560" height="315" id= "video" src="https://www.youtube.com/embed/XfU3qt_hcG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video Musical</iframe>
+           </div>
+                  
+              
+                <div><p>Escuchalo Ahora</p></div>
+          
+            <section>
+
+            </section>
+            <section>
+                <div><p>Seguime en mis Redes</p></div>
+                <ul class="iconosHorizontales">
+                    <li><img class="iconRedes" src="./Img/iconos/twiter.png" alt="icono twiter"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/instagram (1).png" alt="icono instagram"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/facebook.png" alt="icono facebook"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/tik-tok.png" alt="icono tik-tok"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/spotify.png" alt="icono spotify"></li>
+                    <li><img class="iconRedes" src="./Img/iconos/youtube.png" alt="icono youtube"></li>
+                </ul>
+            </section>
+            <div>Nuevo Contenido</div>
+            <Section>
+                <div>Carrousel</div>
+                <div><p></p></div>
+            </Section>
+        </main>
+        <footer>
+            <div>@2022 Tamara Castillo Copyright</div>
+            <ul class="iconosHorizontales">
+                <li><img class="iconfooter" src="./Img/iconos/twiter.png" alt="icono twiter"></li>
+                <li><img class="iconfooter" src="./Img/iconos/instagram (1).png" alt="icono instagram"></li>
+                <li><img class="iconfooter" src="./Img/iconos/facebook.png" alt="icono facebook"></li>
+                <li><img class="iconfooter" src="./Img/iconos/tik-tok.png" alt="icono tik-tok"></li>
+                <li><img class="iconfooter" src="./Img/iconos/spotify.png" alt="icono spotify"></li>
+                <li><img class="iconfooter" src="./Img/iconos/youtube.png" alt="icono youtube"></li>
+            </ul>
+        </footer>
