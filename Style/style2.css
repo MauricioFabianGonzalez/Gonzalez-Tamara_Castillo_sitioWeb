@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+.logo{
+    height: 50px;
+}
 
 /*Cabecera*/
-header{
+/* header{
     font-family: 'Playfair Display', serif;
     font-size: 25px;
     text-decoration: none;
@@ -21,7 +23,7 @@ header{
     margin: auto;
     margin-top: 50px;
     
-}
+} */
 .menu{
     list-style: none;
     display: flex;
@@ -162,6 +164,10 @@ footer{
     -moz-opacity:.70;opacity:.70;
     font-family: 'Playfair Display', serif;
     font-size: 25px;
+    
+}
+.collapse{
+    justify-content: center;
 }
 .nav-link{
     padding:15px 20px;
