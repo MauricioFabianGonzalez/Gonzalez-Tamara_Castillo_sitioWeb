@@ -194,5 +194,43 @@ width: 25px;
     height: 30px;
 }
 
+/*Galeria*/
+#carouselExampleDark{
+    height: 35%;
+    width: 50%;
+    display: flex;
+    position: relative;
+    left: 25%;
+    
+}
 
-
+.grid-container{
+    display: grid; 
+}
+.album{
+  
+    background: rgb(238,174,202);
+   
+}
+.galery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Biogrfia*/
+.img-biograf{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.divisor{
+    height: 50px;
+    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    margin: 20px;
+    width: 100%;
+}
+.contenedores-biografia{
+    padding: 10px;
+}
