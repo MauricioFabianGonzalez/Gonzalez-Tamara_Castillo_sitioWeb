@@ -2,28 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.logo{
+/* .logo{
     height: 50px;
-}
-
-/*Cabecera*/
-/* header{
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    text-decoration: none;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    margin: 100px;
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
-    filter:alpha(opacity=70);
-    -moz-opacity:.70;opacity:.70;
-    margin: auto;
-    margin-top: 50px;
-    
 } */
+
 .menu{
     list-style: none;
     display: flex;
@@ -69,11 +51,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1{
     font-family: 'Playfair Display', serif;
     color: rgb(238,174,202);
     text-align: center;
-    margin: 5%;
+    margin: 90px;
     font-size: 50px;
     text-shadow: 0px 0px 0px rgb(248, 243, 243);
 }
@@ -111,7 +94,6 @@ h1{
     align-items: center;
     flex-direction: column;
     height: 100px;
-    background: rgb(238,174,202);
     background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
     }
 /*aside*/
@@ -133,17 +115,6 @@ aside img{
     height: 30px;
     transition: all 300ms;
 }
-/*Footer*/
-/* footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background: rgb(238,174,202);
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
-} */
-
 
 
 
@@ -231,6 +202,90 @@ width: 25px;
     margin: 20px;
     width: 100%;
 }
+
 .contenedores-biografia{
     padding: 10px;
+}
+/**Canciones*/
+.contenedor-navegador{
+    position: sticky;
+    top: 75px;
+    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    width: 50%;
+    padding: 2px;
+}
+.contenedor-navegador a{
+    text-decoration: none;
+}
+.contenedor-navegador li:hover{
+    background-color: hotpink;
+    font-size: 20px;
+}
+.navegador{
+    display: block;
+    
+    
+}
+.navegador p{
+    font-size: 15px;
+    text-decoration: underline;
+    
+}
+.navegador ul{
+    list-style: none;
+    justify-content: left;
+    
+} 
+.navegador ul li{
+    text-decoration: none;
+}
+
+.canciones{
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    display: flex;
+    flex-direction:column
+    
+} 
+.imgcancion img{
+    height: 25%;
+    width: auto;
+    object-fit: cover;
+}
+.titulo-cancion{
+    margin: 5px;
+}
+.text-cancion strong{
+font-size: 15px;
+text-align: right;
+}
+.text-cancion p{
+    margin: 20px;
+}
+
+/*Contactos*/
+.promocion{
+    padding: 15px;
+    margin: 15px;
+    margin-left: 10px;
+    background-color: rgb(241, 236, 236);
+    opacity: 70%;
+}
+
+.formclases{
+    background-color: blanchedalmond;
+    opacity: 92%; 
+    width: 80%;
+    margin-left: 15px;
+    padding: 15px;
+   
+}
+/*Eventos*/
+.table-responsive{
+    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    margin: 15px;
 }
