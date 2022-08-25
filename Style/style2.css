@@ -79,6 +79,18 @@ h1{
     height: 80%;
     width: 50%;
 }
+
+.Escuchalo{
+    border: 4px solid black;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(238,174,202) ;
+    color: black;
+    text-shadow: 0px 0px 0px rgb(248, 243, 243);
+    position: relative;
+    top: -60px;
+}
 .iconosHorizontales{
    list-style: none;
    display: flex;
@@ -142,10 +154,7 @@ aside img{
     font-family: 'Playfair Display', serif;
 }
 /* footer*/
-/* .container-footer{
-    display: flex;
-    
-} */
+
 footer{
     background: rgb(238,174,202);
     background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
@@ -289,4 +298,11 @@ text-align: right;
     filter:alpha(opacity=70);
     -moz-opacity:.70;opacity:.70;
     margin: 15px;
+}
+.anuncio{
+    background-color: rgba(250, 235, 215, 0.678);
+
+}
+.texto{
+    color: black;
 }
