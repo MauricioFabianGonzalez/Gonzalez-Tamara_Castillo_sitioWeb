@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
 }
-/* .logo{
-    height: 50px;
-} */
+/*Seudo-Variables*/
+.colorTexto{
+    background-color: rgba(250, 235, 215, 0.678);
+    opacity: 70%;
+}
+.fuentePrincipal{
+    font-family: 'Playfair Display', serif;
+}
+.colorPrincipal{
+    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
+}
 
+/*Menu*/
+.navbar{
+    margin-bottom: 10px;
+}
 .menu{
     list-style: none;
     display: flex;
@@ -29,7 +41,7 @@
     background-color: hotpink;
 }
 .menu-vertical a{
-    font-family: 'Playfair Display', serif;
+    
     font-size: 16px;
 }
 .menu li:hover .menu-vertical{
@@ -45,30 +57,21 @@ body{
     margin: 0;
     padding: 0;
     background-image:url("/Img/FondoPage.jpg");
-    height: 150px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1{
-    font-family: 'Playfair Display', serif;
+.titulo{
     color: rgb(238,174,202);
     text-align: center;
-    margin: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 50px;
     text-shadow: 0px 0px 0px rgb(248, 243, 243);
 }
-.carrousels{
-    display: flex;
-    height: 50%;
-    width: 50%;
-    position: relative;
-    left: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+
 .video{
     display: flex;
     align-items: center;
@@ -105,8 +108,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100px;
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
+    height: 100px;  
     margin-top: 15px;
     margin-bottom: 15px;
     }
@@ -137,7 +139,6 @@ aside img{
 
 /*HEADER*/
 .navbar{
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%);
     filter:alpha(opacity=70);
     -moz-opacity:.70;opacity:.70;
     font-family: 'Playfair Display', serif;
@@ -155,9 +156,7 @@ aside img{
 }
 /* footer*/
 
-footer{
-    background: rgb(238,174,202);
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
+footer{ 
     filter:alpha(opacity=70);
     -moz-opacity:.70;opacity:.70;
     width: 100%;
@@ -190,9 +189,7 @@ width: 25px;
     display: grid; 
 }
 .album{
-  
     background: rgb(238,174,202);
-   
 }
 .galery-img{
     width: 100%;
@@ -207,7 +204,6 @@ width: 25px;
 }
 .divisor{
     height: 50px;
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
     filter:alpha(opacity=70);
     margin-bottom: 15px;
     width: 100%;
@@ -220,7 +216,6 @@ width: 25px;
 .contenedor-navegador{
     position: sticky;
     top: 75px;
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
     filter:alpha(opacity=70);
     -moz-opacity:.70;opacity:.70;
     width: 50%;
@@ -280,8 +275,7 @@ text-align: right;
     padding: 15px;
     margin: 15px;
     margin-left: 10px;
-    background-color: rgb(241, 236, 236);
-    opacity: 70%;
+    
 }
 
 .formclases{
@@ -294,15 +288,57 @@ text-align: right;
 }
 /*Eventos*/
 .table-responsive{
-    background: linear-gradient(351deg, rgba(238,174,202,1) 27%, rgba(242,211,224,0.8239670868347339) 97%, rgba(245,245,245,1) 100%); 
     filter:alpha(opacity=70);
     -moz-opacity:.70;opacity:.70;
     margin: 15px;
 }
-.anuncio{
-    background-color: rgba(250, 235, 215, 0.678);
 
-}
 .texto{
     color: black;
+}
+
+.carrousels{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5%;
+}
+.perspectiva{
+  width: 103%;
+  height: 80%;
+  animation-name: crecer!important;
+  animation-iteration-count: 1!important;
+  animation-timing-function: ease-in!important;
+  animation-duration: 15s!important; animation-name: crecer!important;
+  animation-iteration-count: 1!important;
+  animation-timing-function: ease-in!important;
+  animation-duration: 10s!important;
+}
+
+@keyframes crecer{
+    0%{width: 100%;
+        height: 80%;}
+    25%{width:100,75%;
+        height: 80,75%;}
+    50%{width:101,5%;
+        height: 81,5%;}
+    75%{width: 102,25%;
+        height: 82,25%;}
+    100%{width: 103%;
+        height: 83%;}
+}
+
+.lanzamiento{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.promocion pre{
+    font-size: 25px;
+}
+
+.bio pre{
+    padding: 60px;
+    font-size: 25px;
 }
