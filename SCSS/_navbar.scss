@@ -1,0 +1,65 @@
+.navbar {
+    margin-bottom: 10px;
+    filter: alpha(opacity=70);
+    -moz-opacity: .70;
+    opacity: .70;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+    .collapse {
+        justify-content: center;
+
+        li {
+            &:hover {
+                .dropdown {
+                    display: block !important;
+                }
+            }
+
+            .nav-link {
+
+
+                color: rgb(68, 24, 66);
+                font-family: 'Playfair Display', serif;
+            }
+
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                a {
+                    display: block;
+                    padding: 15px 20px;
+                    text-decoration: none;
+                    color: rgb(68, 24, 66);
+                }
+
+                &:hover {
+                    background-color: aliceblue;
+
+                    .menu-vertical {
+                        display: block;
+
+                    }
+                }
+
+                .menu-vertical {
+                    position: absolute;
+                    display: none;
+                    list-style: none;
+                    width: 200px;
+                    background-color: hotpink;
+
+                    a {
+
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

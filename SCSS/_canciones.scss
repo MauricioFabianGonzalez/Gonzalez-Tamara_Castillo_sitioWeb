@@ -1,0 +1,59 @@
+.navegador {
+    display: block;
+
+    .contenedor-navegador {
+        position: sticky;
+        top: 75px;
+        filter: alpha(opacity=70);
+        -moz-opacity: .70;
+        opacity: .70;
+        width: 50%;
+        padding: 2px;
+
+        p {
+            font-size: 15px;
+            text-decoration: underline;
+
+        }
+
+        ul {
+            list-style: none;
+            justify-content: left;
+
+            li {
+                text-decoration: none;
+
+                a {
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: hotpink;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+.imgcancion img {
+    height: 25%;
+    width: auto;
+    object-fit: cover;
+}
+
+.titulo-cancion {
+    margin: 5px;
+}
+
+.text-cancion {
+    strong {
+        font-size: 15px;
+        text-align: right;
+    }
+
+    p {
+        margin: 20px;
+    }
+}

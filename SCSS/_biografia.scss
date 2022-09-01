@@ -1,0 +1,23 @@
+.divisor {
+    height: 50px;
+    filter: alpha(opacity=70);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contenedores-biografia {
+    padding: 10px;
+
+    .bio {
+        pre {
+            padding: 60px;
+            font-size: 25px;
+        }
+    }
+
+    .img-biograf {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
