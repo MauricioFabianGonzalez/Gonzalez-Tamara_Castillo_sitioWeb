@@ -1,0 +1,8 @@
+@mixin texto($bgcolor, $alinear, $size) {
+    font-family: $fuente_texto;
+    color: black;
+    background-color: $bgcolor;
+    text-align: $alinear;
+    justify-content: $alinear;
+    font-size: $size;
+}

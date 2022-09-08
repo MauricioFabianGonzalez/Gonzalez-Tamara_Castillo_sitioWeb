@@ -1,3 +1,15 @@
+.table-responsive, .divisor, .hojaCanciones #contendorGeneral .navegador .contenedor-navegador, footer, .navbar {
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,9 +49,6 @@ body {
 
 .navbar {
   margin-bottom: 10px;
-  filter: alpha(opacity=70);
-  -moz-opacity: 0.7;
-  opacity: 0.7;
   font-family: "Playfair Display", serif;
   font-size: 25px;
 }
@@ -91,11 +100,6 @@ body {
 
 .perspectiva {
   width: 103%;
-  height: 80%;
-  animation-name: crecer !important;
-  animation-iteration-count: 1 !important;
-  animation-timing-function: ease-in !important;
-  animation-duration: 15s !important;
   animation-name: crecer !important;
   animation-iteration-count: 1 !important;
   animation-timing-function: ease-in !important;
@@ -105,29 +109,21 @@ body {
 @keyframes crecer {
   0% {
     width: 100%;
-    height: 80%;
   }
   25% {
     width: 100, 75%;
-    height: 80, 75%;
   }
   50% {
     width: 101, 5%;
-    height: 81, 5%;
   }
   75% {
     width: 102, 25%;
-    height: 82, 25%;
   }
   100% {
     width: 103%;
-    height: 83%;
   }
 }
 .video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 400px;
 }
 .video iframe {
@@ -136,14 +132,15 @@ body {
 }
 
 .Escuchalo {
-  border: 4px solid black;
+  font-family: "Playfair Display", serif;
+  color: black;
+  background-color: rgb(238, 174, 202);
   text-align: center;
   justify-content: center;
-  font-family: "Playfair Display", serif;
-  background-color: rgb(238, 174, 202);
-  color: black;
-  text-shadow: 0px 0px 0px rgb(248, 243, 243);
+  font-size: 25px;
   position: relative;
+  text-shadow: 0px 0px 0px rgb(248, 243, 243);
+  border: 4px solid black;
   top: -60px;
 }
 
@@ -176,9 +173,6 @@ aside li img:hover {
 }
 
 footer {
-  filter: alpha(opacity=70);
-  -moz-opacity: 0.7;
-  opacity: 0.7;
   width: 100%;
 }
 footer img {
@@ -200,57 +194,62 @@ footer img {
   display: grid;
 }
 .album .grid-container .galery-img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.navegador {
+.hojaCanciones #contendorGeneral {
+  flex-wrap: nowrap;
+}
+.hojaCanciones #contendorGeneral .navegador {
   display: block;
 }
-.navegador .contenedor-navegador {
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador {
   position: sticky;
   top: 75px;
-  filter: alpha(opacity=70);
-  -moz-opacity: 0.7;
-  opacity: 0.7;
   width: 50%;
   padding: 2px;
 }
-.navegador .contenedor-navegador p {
-  font-size: 15px;
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador p {
+  font-size: 25px;
   text-decoration: underline;
 }
-.navegador .contenedor-navegador ul {
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador ul {
   list-style: none;
   justify-content: left;
 }
-.navegador .contenedor-navegador ul li {
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador ul li {
   text-decoration: none;
 }
-.navegador .contenedor-navegador ul li a {
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador ul li a {
   text-decoration: none;
 }
-.navegador .contenedor-navegador ul li:hover {
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador ul li:hover {
   background-color: hotpink;
   font-size: 20px;
 }
-
-.imgcancion img {
+.hojaCanciones #contendorGeneral .imgcancion img {
   height: 25%;
   width: auto;
-  object-fit: cover;
 }
-
-.titulo-cancion {
+.hojaCanciones #contendorGeneral .contendeor-cancion {
+  width: auto;
+  position: relative;
+}
+.hojaCanciones #contendorGeneral .contendeor-cancion .titulo-cancion {
   margin: 5px;
 }
-
-.text-cancion strong {
+.hojaCanciones #contendorGeneral .contendeor-cancion .text-cancion strong {
   font-size: 15px;
   text-align: right;
 }
-.text-cancion p {
+.hojaCanciones #contendorGeneral .contendeor-cancion .text-cancion pre {
+  font-family: "Playfair Display", serif;
+  color: black;
+  background-color: none;
+  text-align: none;
+  justify-content: none;
+  font-size: 20px;
   margin: 20px;
 }
 
@@ -270,10 +269,12 @@ footer img {
   margin-left: 15px;
   padding: 15px;
 }
+.formclases .boton {
+  background-color: rgb(238, 174, 202);
+}
 
 .divisor {
   height: 50px;
-  filter: alpha(opacity=70);
   margin-bottom: 15px;
   width: 100%;
 }
@@ -287,14 +288,10 @@ footer img {
 }
 .contenedores-biografia .img-biograf {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 .table-responsive {
-  filter: alpha(opacity=70);
-  -moz-opacity: 0.7;
-  opacity: 0.7;
   margin: 15px;
 }
 

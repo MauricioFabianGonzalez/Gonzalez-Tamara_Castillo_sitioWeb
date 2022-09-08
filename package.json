@@ -1,0 +1,19 @@
+{
+  "name": "tamara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb/issues"
+  },
+  "homepage": "https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb#readme"
+}
