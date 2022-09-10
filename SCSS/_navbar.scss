@@ -13,6 +13,7 @@
             &:hover {
                 .dropdown {
                     display: block !important;
+                    border-radius: 25px;
                 }
             }
 
@@ -31,15 +32,20 @@
             justify-content: space-around;
 
             li {
+                transition: 1s;
                 a {
                     display: block;
                     padding: 15px 20px;
                     text-decoration: none;
                     color: rgb(68, 24, 66);
+                    
                 }
 
                 &:hover {
                     background-color: aliceblue;
+                    box-shadow: 0 0 50px 25px rgba(177, 177, 35, 0.562);
+                    border-radius: 25px;
+                    transition: 1s;
 
                     .menu-vertical {
                         display: block;
@@ -52,7 +58,13 @@
                     display: none;
                     list-style: none;
                     width: 200px;
-                    background-color: hotpink;
+                    background-color: aliceblue;
+                    border-radius: 15px;
+                    &:hover {
+                        background-color: aliceblue;
+                        
+                    }
+                    
 
                     a {
 
