@@ -1,4 +1,4 @@
-.table-responsive, .divisor, .hojaCanciones #contendorGeneral .navegador .contenedor-navegador, footer, .navbar {
+.table-responsive, .divisor, .hojaCanciones #contendorGeneral .navegador .contenedor-navegador, footer, header .navbar {
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
   opacity: 0.7;
@@ -18,7 +18,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Img/FondoPage.jpg");
+  background-image: url("../Img/FondoPage.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,46 +47,79 @@ body {
   background: linear-gradient(351deg, rgb(238, 174, 202) 27%, rgba(242, 211, 224, 0.8239670868) 97%, rgb(245, 245, 245) 100%);
 }
 
-.navbar {
-  margin-bottom: 10px;
+header .carrousels {
+  display: flex;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5%;
+}
+header .carrousels .perspectiva {
+  width: 103%;
+  animation-name: crecer !important;
+  animation-iteration-count: 1 !important;
+  animation-timing-function: ease-in !important;
+  animation-duration: 10s !important;
+}
+@keyframes crecer {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 101%;
+  }
+  50% {
+    width: 101.5%;
+  }
+  75% {
+    width: 102%;
+  }
+  100% {
+    width: 102.5%;
+  }
+}
+header .navbar {
   font-family: "Playfair Display", serif;
   font-size: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 12;
 }
-.navbar .collapse {
+header .navbar .collapse {
   justify-content: center;
 }
-.navbar .collapse li:hover .dropdown {
+header .navbar .collapse li:hover .dropdown {
   display: block !important;
   border-radius: 25px;
 }
-.navbar .collapse li .nav-link {
+header .navbar .collapse li .nav-link {
   color: rgb(68, 24, 66);
   font-family: "Playfair Display", serif;
 }
-.navbar .collapse .menu {
+header .navbar .collapse .menu {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-.navbar .collapse .menu li {
+header .navbar .collapse .menu li {
   transition: 1s;
 }
-.navbar .collapse .menu li a {
+header .navbar .collapse .menu li a {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
   color: rgb(68, 24, 66);
 }
-.navbar .collapse .menu li:hover {
+header .navbar .collapse .menu li:hover {
   background-color: aliceblue;
-  box-shadow: 0 0 50px 25px rgba(177, 177, 35, 0.562);
+  box-shadow: 0 0 50px 25px rgba(241, 166, 207, 0.863);
   border-radius: 25px;
   transition: 1s;
 }
-.navbar .collapse .menu li:hover .menu-vertical {
+header .navbar .collapse .menu li:hover .menu-vertical {
   display: block;
 }
-.navbar .collapse .menu li .menu-vertical {
+header .navbar .collapse .menu li .menu-vertical {
   position: absolute;
   display: none;
   list-style: none;
@@ -94,52 +127,19 @@ body {
   background-color: aliceblue;
   border-radius: 15px;
 }
-.navbar .collapse .menu li .menu-vertical:hover {
+header .navbar .collapse .menu li .menu-vertical:hover {
   background-color: aliceblue;
 }
-.navbar .collapse .menu li .menu-vertical a {
+header .navbar .collapse .menu li .menu-vertical a {
   font-size: 16px;
 }
 
-.carrousels {
-  display: flex;
-  height: 600px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 5%;
-}
-
-.perspectiva {
-  width: 103%;
-  animation-name: crecer !important;
-  animation-iteration-count: 1 !important;
-  animation-timing-function: ease-in !important;
-  animation-duration: 10s !important;
-}
-
-@keyframes crecer {
-  0% {
-    width: 100%;
-  }
-  25% {
-    width: 100, 75%;
-  }
-  50% {
-    width: 101, 5%;
-  }
-  75% {
-    width: 102, 25%;
-  }
-  100% {
-    width: 103%;
-  }
-}
 .contenedorvideo {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 .contenedorvideo .videoSec .video iframe {
-  box-shadow: 0 0 50px 25px rgba(177, 177, 35, 0.562);
+  box-shadow: 0 0 50px 25px rgba(241, 166, 207, 0.863);
   border-radius: 25px;
 }
 .contenedorvideo .Escuchalo {
@@ -151,7 +151,8 @@ body {
   font-size: 25px;
   position: relative;
   text-shadow: 0px 0px 0px rgb(248, 243, 243);
-  border: 4px solid black;
+  border: 4px solid rgba(241, 166, 207, 0.863);
+  box-shadow: 0 0 30px 15px rgba(241, 166, 207, 0.863);
   animation-name: girarColor !important;
   animation-iteration-count: infinite !important;
   animation-timing-function: ease-in !important;
@@ -189,7 +190,7 @@ body {
 .bioIndex {
   background-color: rgba(250, 235, 215, 0.678) !important;
   margin-bottom: 20%;
-  box-shadow: 0 0 50px 25px rgba(177, 177, 35, 0.562);
+  box-shadow: 0 0 50px 25px rgba(241, 166, 207, 0.863);
   border-radius: 25px;
 }
 .bioIndex .resumen {
@@ -205,7 +206,8 @@ body {
 aside {
   position: fixed;
   left: 85%;
-  top: 130px;
+  top: 80px;
+  z-index: 12;
 }
 aside li {
   list-style: none;

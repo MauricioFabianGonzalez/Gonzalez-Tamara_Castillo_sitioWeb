@@ -1,74 +1,117 @@
-.navbar {
-    @extend %opacidad;
-    margin-bottom: 10px;
-
-
-    font-family: $fuente_texto;
-    font-size: 25px;
-
-    .collapse {
-        justify-content: center;
-
-        li {
-            &:hover {
-                .dropdown {
-                    display: block !important;
-                    border-radius: 25px;
-                }
-            }
-
-            .nav-link {
-
-
-                color: $color_secundario;
-                font-family: $fuente_texto;
-            }
-
+header {
+    .carrousels {
+        display: flex;
+        height: 600px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 5%;
+        .perspectiva {
+            width: 103%;
+            animation-name: crecer !important;
+            animation-iteration-count: 1 !important;
+            animation-timing-function: ease-in !important;
+            animation-duration: 10s !important;
+        
         }
+        
+        @keyframes crecer {
+            0% {
+                width: 100%;
+            }
+        
+            25% {
+                width: 101%;
+            }
+        
+            50% {
+                width: 101.5%;
+            }
+        
+            75% {
+                width: 102%;
+            }
+        
+            100% {
+                width: 102.5%;
+            }
+        }
+        
+    }
 
-        .menu {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
+    .navbar {
+        @extend %opacidad;
+        font-family: $fuente_texto;
+        font-size: 25px;
+        position: sticky;
+        top: 0;
+        z-index: 12;
+
+        .collapse {
+            justify-content: center;
 
             li {
-                transition: 1s;
-                a {
-                    display: block;
-                    padding: 15px 20px;
-                    text-decoration: none;
-                    color: rgb(68, 24, 66);
-                    
+                &:hover {
+                    .dropdown {
+                        display: block !important;
+                        border-radius: 25px;
+                    }
                 }
 
-                &:hover {
-                    background-color: aliceblue;
-                    box-shadow: 0 0 50px 25px rgba(177, 177, 35, 0.562);
-                    border-radius: 25px;
+                .nav-link {
+
+
+                    color: $color_secundario;
+                    font-family: $fuente_texto;
+                }
+
+            }
+
+            .menu {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+
+                li {
                     transition: 1s;
 
-                    .menu-vertical {
+                    a {
                         display: block;
+                        padding: 15px 20px;
+                        text-decoration: none;
+                        color: rgb(68, 24, 66);
 
                     }
-                }
 
-                .menu-vertical {
-                    position: absolute;
-                    display: none;
-                    list-style: none;
-                    width: 200px;
-                    background-color: aliceblue;
-                    border-radius: 15px;
                     &:hover {
                         background-color: aliceblue;
-                        
+                        box-shadow: 0 0 50px 25px $color_destellos;
+                        border-radius: 25px;
+                        transition: 1s;
+
+                        .menu-vertical {
+                            display: block;
+
+                        }
                     }
-                    
 
-                    a {
+                    .menu-vertical {
+                        position: absolute;
+                        display: none;
+                        list-style: none;
+                        width: 200px;
+                        background-color: aliceblue;
+                        border-radius: 15px;
 
-                        font-size: 16px;
+                        &:hover {
+                            background-color: aliceblue;
+
+                        }
+
+
+                        a {
+
+                            font-size: 16px;
+                        }
                     }
                 }
             }
