@@ -1,22 +1,41 @@
-# Sitio web de Tamy Castillo
+# Tamy Castillo — sitio web de artista
 
-Sitio estático de Tamara Castillo, artista de música cristiana de Trelew, Chubut. Contiene portada, biografía, canciones, galería, eventos, invitaciones y consultas por clases.
+Sitio estático de Tamara (Tamy) Castillo, cantante cristiana de Trelew, Chubut, Argentina. Se rediseñó con una estética editorial contemporánea conservando los archivos originales de fotografías y canciones.
 
-## Cómo ver y publicar el sitio
-Abrí `index.html` en un navegador o servilo con cualquier servidor de archivos estáticos. Para GitHub Pages, tras aprobar la rama, entrá a **Settings → Pages**, elegí **Deploy from a branch**, seleccioná `main` y `/(root)`. Todas las páginas principales usan rutas relativas para funcionar en un subdirectorio de Pages.
+## Qué contiene
 
-## Cambios propuestos
-- Ajustes de diseño adaptable para dispositivos móviles, navegación con teclado y contenidos multimedia.
-- Corrección de rutas internas de páginas e imágenes.
-- Formularios HTML válidos para consultas de clases e invitaciones. **No envían ni almacenan datos:** preparan texto para copiar y enviar manualmente.
-- Corrección del marcado de una celda de eventos y señalización de las fechas de 2022 como historial.
-- Año de copyright dinámico y mejoras de metadatos y accesibilidad.
+- **Inicio:** portada fotográfica, repertorio, video musical original, biografía resumida y acceso a la galería.
+- **Biografía:** orígenes en Trelew, participación en Cita con la Vida y producción musical de 2021.
+- **Canciones:** las cuatro letras publicadas originalmente: A quién iré, Tu mirada, La indiferencia y Podría esperar.
+- **Galería:** 25 fotografías de la página original, con ampliación en ventana modal y navegación por teclado.
+- **Eventos:** presentaciones de 2022 claramente identificadas como archivo histórico.
+- **Invitaciones y clases:** formularios accesibles que preparan textos copiables, **sin enviar ni almacenar datos**.
 
-## Pendientes antes de presentarlo como sitio oficial
-- Definir y configurar, con autorización, un correo de destino o proveedor seguro de formularios, prevención de spam y política de privacidad.
-- Confirmar perfiles oficiales en redes sociales. Los íconos originales sin URL verificada permanecen sin destino; no deben confundirse con enlaces funcionales.
-- Confirmar próximas presentaciones, lanzamientos, disponibilidad de clases y fotografías autorizadas.
-- Probar el sitio en navegadores y celulares reales y verificar los recursos externos.
+## Diseño y tecnología
 
-### Archivos
-`index.html` es la portada; `Page/` reúne las páginas internas; `Img/` contiene fotos originales; `css/style.css` se usa en producción; `js/site.js` controla el año, la navegación y los formularios. `SCSS/` guarda los archivos originales de estilos; los ajustes nuevos se agregaron a CSS directamente, por lo que deben portarse a SCSS si se vuelve a compilar.
+HTML5 + CSS + JavaScript sin frameworks ni procesos de compilación. Se conservaron `Img/`, los antiguos `SCSS/` y `css/style.css` como referencia. El diseño actualizado está en `css/modern.css` y los controles en `js/site.js`. El proyecto usa Google Fonts y un video de YouTube externo.
+
+Diseño adaptable a dispositivos móviles, navegación accesible desde teclado, saltos al contenido, estados de foco, imágenes diferidas y soporte para preferencia de movimiento reducido.
+
+## Desarrollo y verificación
+
+Requiere Node.js 22+ solo para ejecutar las pruebas (no para servir la web):
+
+```bash
+npm test
+npm run check:js
+```
+
+`scripts/validate-site.mjs` revisa las diez páginas HTML, rutas relativas, recursos locales, atributos alternativos de fotografías, enlaces con fragmento y estructura básica. El flujo de GitHub Actions `.github/workflows/site-check.yml` automatiza estas verificaciones en cada push y pull request.
+
+Para verla localmente, serví el directorio raíz con un servidor estático (por ejemplo `python -m http.server 8000`) y abrí `http://localhost:8000`. GitHub Pages puede publicarla desde `main`, carpeta `/(root)`, una vez aprobados los cambios. No se requiere backend para el contenido estático.
+
+## Aspectos que faltan confirmar antes de publicarla como sitio definitivo
+
+1. **Formularios:** hoy preparan un mensaje para copiar, pero no se envía a nadie. Para recibir solicitudes reales se debe autorizar un correo o proveedor, configurar validación antispam y definir tratamiento de datos.
+2. **Enlaces a redes:** no se incorporaron perfiles de redes sociales no verificados.
+3. **Agenda:** no se inventaron próximas presentaciones. Es necesario confirmar fechas antes de agregarlas.
+4. **Contenido:** comprobar actualidad de la información sobre clases, biografía, música y permisos de publicación.
+5. **QA visual:** revisar manualmente escritorio, celular, video y galería en navegadores reales. El control automático de archivos no reemplaza esta prueba.
+
+Los cambios de diseño están en una rama independiente y se proponen para revisión; no se han aplicado a `main`.
