@@ -1,200 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="es-AR">
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-  <title>Tamy Castillo- Invitaciones</title>
-  <meta name="description" content="Tamara Castillo, es una artista Cristiana Patagonica, mira sus nuevos lanzamientos">
-  <meta name="keywords" content="Artista Cristiana, Musica Gospel Cantante Solista">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#121016">
+ <meta name="description" content="Prepará una invitación para presentaciones y encuentros musicales con Tamy Castillo.">
+ <title>Invitaciones | Tamy Castillo</title>
+ <link rel="icon" type="image/png" href="../Img/tamira.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../css/modern.css">
+ <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light colorPrincipal">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav menu">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html"
-                id="inicio">Inicio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Page/Eventos.html"
-                id="evento">Eventos</a>
-              <ul class="menu-vertical">
-                <li><a class="nav-link active" aria-current="page" href="../Page/Eventos.html" id="agenda">Agenda</a>
-                </li>
-                <li><a class="nav-link active" aria-current="page" href="../Page/Invitaciones.html"
-                    id="invitaciones">Invitaciones</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Page/Biografia.html"
-                id="biografia">Biografia</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Page/Canciones.html"
-                id="canciones">Canciones</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Page/Galeria.html"
-                id="galeria">Galeria</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Page/Contactos.html"
-                id="contactos">Contactos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-
-    <h1 class="titulo fuentePrincipal">Eventos e Invitaciones</h1>
-
-
-    <div class="container col-xxl-8 px-4 py-5 fuentePrincipal colorPrincipal">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 colorTexto">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="/Img/Banda 1280x852.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-            height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3 texto">Gracias por tu invitacion</h1>
-          <p class="lead">Si queres conocer nuestra agenda de presentacion, podes hacerlo ingresando aqui</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="/Page/Eventos.html"><button type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2">Agenda</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-
-    <fieldset id="presencial">
-      <form action="" method="get">
-        <fieldset class="formclases">
-          <div class="col-md-7 col-lg-8">
-
-            <h4 class="mb-3">Ficha de Contactos</h4>
-
-            <form class="needs-validation">
-              <div class="row g-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Evento Virtual
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Evento Presencial
-                  </label>
-                </div>
-                <div class="col-sm-12">
-                  <label for="Institucion" class="form-label">Nombres o Institucion</label>
-                  <input type="text" class="form-control" id="Institucion" placeholder="Dinos quien eres" value=""
-                    required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="telefono" class="form-label">Telefono</label>
-                  <input type="number" class="form-control" id="telefono" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid last name is required.
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="lugar" class="form-label">Lugar</label>
-                  <input type="text" class="form-control" id="lugar" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
-                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                  <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="comentario" class="form-label">Comentario</label>
-                <textarea class="form-control" id="comentario" rows="3"></textarea>
-                <div class="invalid-feedback">
-                  Comentanos un poco sobre tu evento
-                </div>
-              </div>
-            </form>
-          </div>
-          <hr class="my-4">
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Envia Invitacion</button>
-
-
-        </fieldset>
-      </form>
-    </fieldset>
-
-  </main>
-  <aside>
-    <ul>
-      <li><img src="../Img/iconos/twiter.png" alt="icono twiter"></li>
-      <li><img src="../Img/iconos/instagram (1).png" alt="icono instagram"></li>
-      <li><img src="../Img/iconos/facebook.png" alt="icono facebook"></li>
-      <li><img src="../Img/iconos/tik-tok.png" alt="icono tic tok"></li>
-      <li><img src="../Img/iconos/spotify.png" alt="icono tic tok"></li>
-      <li><img src="../Img/iconos/youtube.png" alt="icono tic tok"></li>
-    </ul>
-  </aside>
-
-  <footer class="colorPrincipal">
-    <div class="container">
-      <div class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="/Page/Eventos.html" class="nav-link px-2 text-muted">Eventos</a></li>
-          <li class="nav-item"><a href="/Page/Biografia.html" class="nav-link px-2 text-muted">Biografia</a></li>
-          <li class="nav-item"><a href="/Page/Canciones.html" class="nav-link px-2 text-muted">Canciones</a></li>
-          <li class="nav-item"><a href="/Page/Galeria.html" class="nav-link px-2 text-muted">Galeria</a></li>
-          <li class="nav-item"><a href="/Page/Contactos.html" class="nav-link px-2 text-muted">Contactos</a></li>
-        </ul>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="/Img/iconos/twiter.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="/Img/iconos/facebook.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="/Img/iconos/youtube.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="/Img/iconos/instagram (1).png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="/Img/iconos/spotify.png"
-                alt=""></a></li>
-        </ul>
-        <p class="text-center text-muted">© 2022 Tamara Castillo</p>
-        <p class="text-center text-muted">Diseño Web: <a href="">Mauricio Fabian Gonzalez</a></p>
-      </div>
-    </div>
-  </footer>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+ <a class="skip-link" href="#contenido">Saltar al contenido</a>
+ <header class="site-header">
+  <div class="shell header-inner">
+   <a class="brand" href="../index.html" aria-label="Tamy Castillo — Inicio">
+    <span class="brand-name">Tamy Castillo</span><span class="brand-label">Música · Fe · Patagonia</span>
+   </a>
+   <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú"><span></span><span></span><span></span></button>
+   <nav class="main-nav" id="menu-principal" data-main-nav aria-label="Menú principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../Page/Canciones.html">Música</a>
+    <a href="../Page/Biografia.html">Biografía</a>
+    <a href="../Page/Galeria.html">Galería</a>
+    <a href="../Page/Eventos.html">Eventos</a>
+    <a href="../Page/Contactos.html">Clases</a>
+    <a class="nav-cta" href="../Page/Invitaciones.html">Invitaciones</a>
+   </nav>
+  </div>
+ </header>
+ <main id="contenido"><section class="page-hero"><div class="shell">
+<nav class="breadcrumb" aria-label="Ruta de navegación"><a href="../index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Invitaciones</span></nav>
+<p class="eyebrow">Invitaciones</p><h1>Compartamos<br><span class='accent'>un escenario.</span></h1><p class="lead">Si querés invitar a Tamy Castillo a un encuentro o evento, contanos tu propuesta.</p></div></section>
+<section class="section"><div class="shell split">
+<div class="split-image photo-accent"><img src="../Img/Banda 1280x852.jpg" alt="Fotografía de músicos conservada del sitio original" loading="lazy"></div>
+<div class="split-body"><p class="eyebrow">Invitaciones</p><h2 class="section-title">Cada encuentro<br><span class="accent">es único.</span></h2><p>¿Organizás un concierto, actividad comunitaria o encuentro? Prepará una invitación con la modalidad, el lugar y la fecha propuesta.</p><p>Este formulario genera un texto para copiar; todavía no recibe solicitudes automáticamente.</p><a class="button subtle" href="#invitacion">Ir al formulario ↗</a></div>
+</div></section>
+<section class="section section-dark" id="invitacion"><div class="shell"><div class="form-intro" style="max-width:850px;margin-inline:auto"><p class="eyebrow">Tu propuesta</p><h2>Prepará una invitación</h2><p>Agregá los datos necesarios. No se realiza ninguna reserva ni confirmación automática.</p></div>
+<form class="form-wrap" data-inquiry-form="invitaciones" aria-label="Preparar invitación">
+<div class="form-grid"><div class="field "><label for="institucion">Nombre o institución *</label><input id="institucion" name="institucion" type="text" placeholder="Organización o persona que invita" required maxlength="160" ></div><div class="field "><label for="modalidad">Modalidad (presencial o virtual) *</label><input id="modalidad" name="modalidad" type="text" placeholder="Presencial / virtual" required maxlength="160" ></div><div class="field "><label for="telefono">Teléfono *</label><input id="telefono" name="telefono" type="tel" placeholder="Código de área y número" required maxlength="160" autocomplete="tel"></div><div class="field "><label for="lugar">Ciudad y lugar *</label><input id="lugar" name="lugar" type="text" placeholder="Dónde sería el evento" required maxlength="160" ></div><div class="field "><label for="fecha">Fecha propuesta</label><input id="fecha" name="fecha" type="date" placeholder="" ></div><div class="field "><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@correo.com" maxlength="120" autocomplete="email"></div><div class="field full"><label for="comentario">Detalles del evento</label><textarea id="comentario" name="comentario" placeholder="Contanos el tipo de encuentro, horarios y otra información útil" maxlength="1200" rows="4"></textarea></div></div>
+<p class="help-note">* Datos obligatorios. Este formulario no tiene un servidor de recepción: prepara un mensaje para copiar, pero no envía, almacena ni comparte tus datos automáticamente.</p>
+<button class="button" type="submit">Preparar invitación <span aria-hidden="true">↗</span></button>
+<div class="form-result" data-form-result role="status" aria-live="polite">
+<p data-result-message></p>
+<textarea data-result-text readonly aria-label="Texto de la consulta listo para copiar"></textarea>
+<button type="button" class="button outline small" data-copy-result>Copiar mensaje</button>
+</div>
+</form>
+</div></section></main>
+ <footer class="footer"><div class="shell">
+  <div class="footer-top">
+   <div><a href="../index.html" class="footer-brand">Tamy Castillo</a><p class="footer-sub">Música desde la Patagonia</p></div>
+   <nav class="footer-nav" aria-label="Enlaces del pie"><a href="../index.html">Inicio</a><a href="../Page/Canciones.html">Música</a><a href="../Page/Biografia.html">Biografía</a><a href="../Page/Galeria.html">Galería</a><a href="../Page/Eventos.html">Eventos</a><a href="../Page/Contactos.html">Clases</a><a href="../Page/Invitaciones.html">Invitaciones</a></nav>
+  </div>
+  <div class="footer-bottom"><span>© <span data-current-year>2026</span> Tamara Castillo. Todos los derechos reservados.</span><span>Diseño y desarrollo: <a href="https://github.com/MauricioFabianGonzalez" target="_blank" rel="noopener noreferrer">Mauricio Fabián González</a></span></div>
+ </div></footer>
 </body>
-
 </html>

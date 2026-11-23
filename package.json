@@ -1,19 +1,20 @@
 {
-  "name": "tamara",
+  "name": "tamy-castillo-sitio-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web estático de Tamy Castillo: música, biografía, galería, eventos e invitaciones.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node scripts/validate-site.mjs",
+    "check:js": "node --check js/site.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb.git"
+    "url": "git+https://github.com/MauricioFabianGonzalez/Gonzalez-Tamara_Castillo_sitioWeb.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb/issues"
+    "url": "https://github.com/MauricioFabianGonzalez/Gonzalez-Tamara_Castillo_sitioWeb/issues"
   },
-  "homepage": "https://github.com/MauricioFabianGonzalez/Gonzalez_Tamara_Castillo_sitioWeb#readme"
+  "homepage": "https://github.com/MauricioFabianGonzalez/Gonzalez-Tamara_Castillo_sitioWeb#readme"
 }
