@@ -350,3 +350,73 @@ footer img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Mejoras de diseño adaptable y accesibilidad (2026) */
+:root{--tam-ink:#432b42}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden;line-height:1.6}
+*,*::before,*::after{box-sizing:border-box}
+img,iframe{max-width:100%}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #5e2b5e;outline-offset:3px}
+.skip-link{position:absolute;left:1rem;top:-5rem;padding:.7rem 1rem;z-index:10000;background:#fff;color:#241124;border-radius:.5rem}
+.skip-link:focus{top:1rem}
+.titulo{font-size:clamp(2rem,5vw,3.3rem);line-height:1.2;padding-inline:1rem}
+.navbar .menu{flex-wrap:wrap;align-items:center}
+header .navbar .collapse .menu li:hover .menu-vertical,header .navbar .collapse .menu li:focus-within .menu-vertical{display:block}
+.navbar .nav-link[aria-current="page"]{text-decoration:underline;text-underline-offset:.35rem}
+header .carrousels{height:clamp(260px,53vw,590px);overflow:hidden}
+header .carrousels .carousel,header .carrousels .carousel-inner,header .carrousels .carousel-item{height:100%;width:100%}
+header .carrousels img{width:100%;height:100%;object-fit:cover}
+.contenedorvideo{margin:3rem auto;max-width:1050px;padding:0 1rem}
+.contenedorvideo .videoSec{width:100%;margin:auto}
+.contenedorvideo iframe,.contenedorvideo #video{display:block;width:100%!important;height:auto!important;aspect-ratio:16/9;border:0;border-radius:1.25rem;box-shadow:0 10px 35px rgba(71,26,67,.22)}
+.contenedorvideo .Escuchalo{width:fit-content!important;max-width:95%;margin:1.5rem auto;padding:.45rem 1rem;border-radius:1rem}
+.bioIndex{max-width:1140px;margin:2rem auto 5rem!important;padding:1rem}
+.bioIndex img{display:block;max-height:490px;object-fit:cover;border-radius:1rem}
+.bioIndex .resumen{font-size:clamp(1.05rem,2.3vw,1.5rem)}
+#carouselExampleDark{height:auto;width:min(92%,880px);left:auto;margin:2rem auto}
+#carouselExampleDark img{max-height:560px;object-fit:contain}
+.album .grid-container .galery-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.hojaCanciones #contendorGeneral{flex-wrap:wrap;gap:1rem;justify-content:center}
+.hojaCanciones #contendorGeneral .navegador{width:100%;max-width:280px;flex:1 1 230px}
+.hojaCanciones #contendorGeneral .navegador .contenedor-navegador{width:100%;top:1rem}
+.hojaCanciones #contendorGeneral .contendeor-cancion{width:auto;min-width:0;flex:2 1 290px}
+.hojaCanciones #contendorGeneral .imgcancion{width:auto;min-width:0;flex:1 1 230px}
+.hojaCanciones #contendorGeneral .imgcancion img{height:auto;max-width:100%}
+.hojaCanciones #contendorGeneral .contendeor-cancion .text-cancion pre,.contenedores-biografia .bio pre,.promocion pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:clamp(1rem,2vw,1.25rem)}
+.contenedores-biografia .bio pre{padding:clamp(1rem,4vw,3rem)}
+.table-responsive{max-width:100%;overflow-x:auto}
+.site-form{max-width:800px;margin:1.5rem auto 4rem;padding:clamp(1rem,3vw,2rem);background:rgba(255,249,251,.96);border:1px solid #e7c7d7;border-radius:1rem;box-shadow:0 10px 35px rgba(66,30,59,.15)}
+.site-form .form-control,.site-form .form-select{min-height:44px}
+.site-form .btn-primary{background-color:#78436d;border-color:#78436d}
+.site-form .btn-primary:hover{background-color:#5d3155;border-color:#5d3155}
+.form-notice{font-size:.95rem;color:#5c4158}
+.form-result{display:none;margin-top:1rem}
+.form-result.is-visible{display:block}
+.form-result textarea{width:100%;min-height:220px;white-space:pre-wrap}
+.page-intro{max-width:1000px;margin:0 auto;padding:1rem}
+.page-intro .lead{max-width:760px}
+.page-intro img{width:100%;max-height:530px;object-fit:cover;border-radius:1rem}
+footer .nav{flex-wrap:wrap}
+footer .nav-link{color:var(--tam-ink)!important}
+footer img{max-width:25px;height:auto}
+@media(max-width:991px){
+ header .navbar .collapse .menu{display:block;width:100%;padding-left:0}
+ header .navbar .collapse .menu li .menu-vertical{position:static;width:100%;display:block;margin:0 0 .5rem;padding-left:1rem;background:transparent}
+ header .navbar .collapse .menu li a{padding:.5rem .8rem}
+ aside{display:none}
+ .bioIndex{margin:1rem 1rem 3rem!important}
+ .hojaCanciones #contendorGeneral .navegador,.hojaCanciones #contendorGeneral .contendeor-cancion,.hojaCanciones #contendorGeneral .imgcancion{flex-basis:100%;max-width:100%}
+ .hojaCanciones #contendorGeneral .navegador .contenedor-navegador{position:static}
+}
+@media(max-width:600px){
+ body{background-attachment:scroll}
+ .contenedorvideo{margin:2rem auto}
+ .contenedorvideo .Escuchalo{font-size:1.1rem}
+ .bioIndex .p-4{padding:1.25rem!important}
+ .titulo{margin:2rem auto}
+ #carouselExampleDark{width:96%}
+ .site-form{margin:1rem .75rem 3rem}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
