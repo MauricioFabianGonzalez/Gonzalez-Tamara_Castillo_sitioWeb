@@ -1,116 +1,65 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="es-AR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-  <title>Clases de canto | Tamy Castillo</title>
-  <meta name="description" content="Tamara Castillo es profesora de Canto, inscribite de forma online">
-  <meta name="keywords" content="Artista Cristiana, Musica Gospel Cantante Solista clases de canto">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#121016">
+ <meta name="description" content="Información y consultas para clases de canto de Tamy Castillo, Trelew, Chubut.">
+ <title>Clases de canto | Tamy Castillo</title>
+ <link rel="icon" type="image/png" href="../Img/tamira.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../css/modern.css">
+ <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-  <a href="#contenido" class="skip-link">Saltar al contenido</a>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light colorPrincipal">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav menu">
-            <li class="nav-item"><a class="nav-link active" href="../index.html"
-                id="inicio">Inicio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="../Page/Eventos.html"
-                id="evento">Eventos</a>
-              <ul class="menu-vertical">
-                <li><a class="nav-link active" href="../Page/Eventos.html" id="agenda">Agenda</a>
-                </li>
-                <li><a class="nav-link active" href="../Page/Invitaciones.html"
-                    id="invitaciones">Invitaciones</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="../Page/Biografia.html"
-                id="biografia">Biografia</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="../Page/Canciones.html"
-                id="canciones">Canciones</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="../Page/Galeria.html"
-                id="galeria">Galeria</a>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="../Page/Contactos.html"
-                id="contactos">Contactos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="contenido"><h1 class="titulo fuentePrincipal">Clases de canto con Tamy Castillo</h1><section class="page-intro"><div class="bg-light rounded-4 p-4 shadow-sm"><h2 class="h4">Clases de canto</h2><p class="lead">Si te interesa desarrollar tu voz y conocer más sobre las clases de canto, prepará una consulta.</p><p class="form-notice"><strong>Importante:</strong> el formulario no envía información automáticamente. Te permite generar un mensaje para copiar y compartir a través de tu canal de contacto habitual.</p></div></section><form class="site-form" data-inquiry-form="clases"><h2 class="h4">Prepará tu mensaje</h2><div class="row g-3"><div class="col-md-6"><label class="form-label" for="nombre">Nombre *</label><input class="form-control" id="nombre" name="nombre" type="text" required maxlength="160"></div>
-<div class="col-md-6"><label class="form-label" for="apellido">Apellido *</label><input class="form-control" id="apellido" name="apellido" type="text" required maxlength="160"></div>
-<div class="col-md-6"><label class="form-label" for="telefono">Teléfono *</label><input class="form-control" id="telefono" name="telefono" type="tel" required maxlength="160"></div>
-<div class="col-md-6"><label class="form-label" for="email">Correo electrónico</label><input class="form-control" id="email" name="email" type="email" maxlength="160"></div>
-<div class="col-md-6"><label class="form-label" for="ubicacion">Localidad</label><input class="form-control" id="ubicacion" name="ubicacion" type="text" maxlength="160"></div>
-<div class="col-md-6"><label class="form-label" for="mensaje">¿Qué te gustaría aprender?</label><textarea class="form-control" id="mensaje" name="mensaje" rows="3" maxlength="1000"></textarea></div></div><p class="form-notice mt-3">* Datos obligatorios. Tu información no se envía ni almacena en un servidor.</p><button type="submit" class="btn btn-primary btn-lg w-100">Preparar mensaje</button><div class="form-result" role="status" aria-live="polite"><p data-result-message class="form-notice mt-3"></p><textarea data-result-text class="form-control" aria-label="Mensaje preparado" readonly></textarea><button type="button" class="btn btn-outline-secondary mt-2" data-copy-result>Copiar mensaje</button></div></form></main>
-  <aside>
-    <ul>
-      <li><img src="../Img/iconos/twiter.png" alt="icono twiter"></li>
-      <li><img src="../Img/iconos/instagram (1).png" alt="icono instagram"></li>
-      <li><img src="../Img/iconos/facebook.png" alt="icono facebook"></li>
-      <li><img src="../Img/iconos/tik-tok.png" alt="icono tic tok"></li>
-      <li><img src="../Img/iconos/spotify.png" alt="icono tic tok"></li>
-      <li><img src="../Img/iconos/youtube.png" alt="icono tic tok"></li>
-    </ul>
-  </aside>
-
-  <footer class="colorPrincipal">
-    <div class="container">
-      <div class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="../Page/Eventos.html" class="nav-link px-2 text-muted">Eventos</a></li>
-          <li class="nav-item"><a href="../Page/Biografia.html" class="nav-link px-2 text-muted">Biografia</a></li>
-          <li class="nav-item"><a href="../Page/Canciones.html" class="nav-link px-2 text-muted">Canciones</a></li>
-          <li class="nav-item"><a href="../Page/Galeria.html" class="nav-link px-2 text-muted">Galeria</a></li>
-          <li class="nav-item"><a href="../Page/Contactos.html" class="nav-link px-2 text-muted">Contactos</a></li>
-        </ul>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="../Img/iconos/twiter.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="../Img/iconos/facebook.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="../Img/iconos/youtube.png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="../Img/iconos/instagram (1).png"
-                alt=""></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="../Img/iconos/spotify.png"
-                alt=""></a></li>
-        </ul>
-        <p class="text-center text-muted">© <span data-current-year>2022</span> Tamara Castillo</p>
-        <p class="text-center text-muted">Diseño Web: <a href="https://github.com/MauricioFabianGonzalez">Mauricio Fabian Gonzalez</a></p>
-      </div>
-    </div>
-  </footer>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <script src="../js/site.js" defer></script>
+ <a class="skip-link" href="#contenido">Saltar al contenido</a>
+ <header class="site-header">
+  <div class="shell header-inner">
+   <a class="brand" href="../index.html" aria-label="Tamy Castillo — Inicio">
+    <span class="brand-name">Tamy Castillo</span><span class="brand-label">Música · Fe · Patagonia</span>
+   </a>
+   <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú"><span></span><span></span><span></span></button>
+   <nav class="main-nav" id="menu-principal" data-main-nav aria-label="Menú principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../Page/Canciones.html">Música</a>
+    <a href="../Page/Biografia.html">Biografía</a>
+    <a href="../Page/Galeria.html">Galería</a>
+    <a href="../Page/Eventos.html">Eventos</a>
+    <a href="../Page/Contactos.html">Clases</a>
+    <a class="nav-cta" href="../Page/Invitaciones.html">Invitaciones</a>
+   </nav>
+  </div>
+ </header>
+ <main id="contenido"><section class="page-hero"><div class="shell">
+<nav class="breadcrumb" aria-label="Ruta de navegación"><a href="../index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Clases de canto</span></nav>
+<p class="eyebrow">Clases de canto</p><h1>Encontrá<br><span class='accent'>tu voz.</span></h1><p class="lead">Si te apasiona cantar y querés conocer más sobre la propuesta de clases, prepará una consulta.</p></div></section>
+<section class="section"><div class="shell split">
+<div class="split-image photo-accent"><img src="../Img/Tam cuad 3.jpg" alt="Fotografía de Tamara Castillo conservada del sitio original" loading="lazy"></div>
+<div class="split-body"><p class="eyebrow">Cantá con confianza</p><h2 class="section-title">Tu voz tiene<br><span class="accent">algo que decir.</span></h2>
+<p>En el proyecto original, Tamy invita a personas que desean desarrollar su voz, trabajar su técnica y ganar seguridad sobre el escenario.</p>
+<p>Podés dejar preparada una consulta sobre modalidad, disponibilidad y clases personalizadas. La disponibilidad actual todavía debe ser confirmada.</p>
+<a class="button subtle" href="#consulta">Ir al formulario ↗</a></div>
+</div></section>
+<section class="section section-dark" id="consulta"><div class="shell"><div class="form-intro" style="max-width:850px;margin-inline:auto"><p class="eyebrow">Hablemos de música</p><h2>Consultá por las clases</h2><p>Completá los datos y prepará un mensaje para compartir a través de tu medio de contacto habitual.</p></div>
+<form class="form-wrap" data-inquiry-form="clases" aria-label="Consultar por clases">
+<div class="form-grid"><div class="field "><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required maxlength="160" ></div><div class="field "><label for="apellido">Apellido *</label><input id="apellido" name="apellido" type="text" placeholder="Tu apellido" required maxlength="160" ></div><div class="field "><label for="telefono">Teléfono *</label><input id="telefono" name="telefono" type="tel" placeholder="Código de área y número" required maxlength="160" autocomplete="tel"></div><div class="field "><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@correo.com" maxlength="120" autocomplete="email"></div><div class="field "><label for="ubicacion">Localidad</label><input id="ubicacion" name="ubicacion" type="text" placeholder="Ciudad / país" maxlength="160" ></div><div class="field full"><label for="mensaje">¿Qué te gustaría aprender?</label><textarea id="mensaje" name="mensaje" placeholder="Contanos qué buscás en las clases de canto" maxlength="1200" rows="4"></textarea></div></div>
+<p class="help-note">* Datos obligatorios. Este formulario no tiene un servidor de recepción: prepara un mensaje para copiar, pero no envía, almacena ni comparte tus datos automáticamente.</p>
+<button class="button" type="submit">Consultar por clases <span aria-hidden="true">↗</span></button>
+<div class="form-result" data-form-result role="status" aria-live="polite">
+<p data-result-message></p>
+<textarea data-result-text readonly aria-label="Texto de la consulta listo para copiar"></textarea>
+<button type="button" class="button outline small" data-copy-result>Copiar mensaje</button>
+</div>
+</form>
+</div></section></main>
+ <footer class="footer"><div class="shell">
+  <div class="footer-top">
+   <div><a href="../index.html" class="footer-brand">Tamy Castillo</a><p class="footer-sub">Música desde la Patagonia</p></div>
+   <nav class="footer-nav" aria-label="Enlaces del pie"><a href="../index.html">Inicio</a><a href="../Page/Canciones.html">Música</a><a href="../Page/Biografia.html">Biografía</a><a href="../Page/Galeria.html">Galería</a><a href="../Page/Eventos.html">Eventos</a><a href="../Page/Contactos.html">Clases</a><a href="../Page/Invitaciones.html">Invitaciones</a></nav>
+  </div>
+  <div class="footer-bottom"><span>© <span data-current-year>2026</span> Tamara Castillo. Todos los derechos reservados.</span><span>Diseño y desarrollo: <a href="https://github.com/MauricioFabianGonzalez" target="_blank" rel="noopener noreferrer">Mauricio Fabián González</a></span></div>
+ </div></footer>
 </body>
-
 </html>
